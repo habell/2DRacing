@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+    <head>
+        <title>My Homework 1</title>
+    </head>
+    <body>
+        <div id="eur_course"></div>
+        <div id="usd_course"></div>
+        <input id="money_value" type="text" size="40" placeholder="Введите значение в RUB">
+        <input id="result_button" type="button" style="height:20px; width:120px" value="Посчитать">
+        <p></p>
+        <div id="rub_output"></div> 
+        <div id="usd_output"></div> 
+        <div id="eur_output"></div> 
+    </body>
+</html>
+
+<script>
+    var euro_cource = 87
+    var dollar_cource = 76
+
+    document.getElementById('eur_course').innerHTML="Курс Доллара = "+dollar_cource+" руб";
+    document.getElementById('usd_course').innerHTML="Курс Евро = "+euro_cource+" руб";
+
+    result_button.onclick = function() {
+        var rouble_val = document.getElementById('money_value').value;
+        var usd = rouble_val/dollar_cource
+        var eur = rouble_val/euro_cource
+        document.getElementById('rub_output').innerHTML="RUB = "+rouble_val;
+        document.getElementById('usd_output').innerHTML="USD = "+usd;
+        document.getElementById('eur_output').innerHTML="EUR = "+eur;
+        alert("RUB = "+rouble_val+"\n"+"USD = "+usd+"\n"+"EUR = "+eur)
+    };
+</script>
