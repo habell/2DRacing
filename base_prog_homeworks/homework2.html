@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+    <head>
+        <title>My Homework 2</title>
+    </head>
+    <body>
+        <input id="a_value" type="text" size="40" placeholder="Введите a"> <p></p>
+        <input id="b_value" type="text" size="40" placeholder="Введите b"> <p></p>
+        <input id="height_value" type="text" size="40" placeholder="Введите h - высоту трапеции"> <p></p>
+        <input id="result_button" type="button" style="height:20px; width:150px" value="Посчитать площадь"><p></p>
+        <div id="output"></div>
+    </body>
+</html>
+
+<script>
+    result_button.onclick = function() {
+        var a = parseInt(document.getElementById('a_value').value);
+        var b = parseInt(document.getElementById('b_value').value);
+        var h = parseInt(document.getElementById('height_value').value); // Для доп оптимизации, можно было бы не парсить это значение
+        var result = ((a + b) / 2) * h
+        document.getElementById('output').innerHTML="Площадь трапеции будет равна: "+result;
+        alert("Площадь трапеции будет равна: "+result)
+    };
+</script>
