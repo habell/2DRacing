@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script type="text/javascript">
+    
+    let ply1_number = 0;
+    let ply2_number = 0;
+
+    let ply1_count = 0;
+    let ply2_count = 0;
+    let WantToPlay = true;
+    let ExitString = "Выход";
+    let ExitInfo = " | Для завершения, напишите "+ExitString;
+
+    while(WantToPlay) { // Не знал как лучше сделать выход, сделал сразу 2 способа, понимаю что нет смысла делать WantToPlay сейчас, но сделал для наглядности.
+        ply1_number = checkPlyExitString("Игрок 1 - Загадайте число"+ExitInfo);
+        if (!ply1_number) break; 
+        ply2_number = checkPlyExitString("Игрок 2 - Загадайте число"+ExitInfo);
+        if (!ply2_number) break;
+
+        let ply1_answer = checkPlyExitString("Игрок 1 - Угадывайте число"+ExitInfo);
+        if (!ply1_answer) break;
+        let ply2_answer = checkPlyExitString("Игрок 2 - Угадывайте число"+ExitInfo);
+        if (!ply2_answer) break;
+        findWinners(ply1_answer, ply2_answer);
+    }
+
+    function findWinners(ply1_ans, ply2_a) {
+        let winnersString = "";
+        if (ply1_number == ply2_a) {
+            ply1_count += 1;
+            winnersString += "Игрок 1 угадал число!\n";
+        }
+        if (ply2_number == ply1_ans) {
+            ply2_count += 1;
+            winnersString += "Игрок 2 угадал число!\n";
+        }
+        if (winnersString == "") {
+            winnersString = "Увы никто не победил..";
+        }
+        alert(winnersString);
+    }
+
+    function checkPlyExitString(str) {
+        let info = prompt(str);
+        while(!info){
+            info = prompt("Ничего не ввели, пожалуйста, введите число!"+ExitInfo);
+        }
+        if (info == ExitString) {
+            alert("Игра окончена!\nРезультаты игроков в баллах:\nИгрок 1: "+ply1_count+"\nИгрок 2: "+ply2_count);
+            WantToPlay = false;
+            info = false; 
+        }
+        return info;
+    }
+</script>
