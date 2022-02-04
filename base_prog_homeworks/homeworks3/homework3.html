@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script type="text/javascript">
+    let questionsArray = [
+        ["Чем занимался Моцарт?", "Музыкой","музыкой", "Музыка", "музыка"],
+        ["Название нашей планеты?", "Земля", "земля", "грунт", "землюшка"],
+        ["Фамилия нашего президента?", "Путин", "путин", "В.В. Путин", "Каддафи"],
+    ];
+    let rightQuestion = 0;
+
+    for(i = 0; i < questionsArray.length; i++){
+        let vopros = prompt(questionsArray[i][0]);
+        for(j = 1; j < questionsArray[i].length; j++){
+            if (vopros == questionsArray[i][j]) {
+                rightQuestion += 1;
+                alert("Вы угадали! Правильных ответов: "+ rightQuestion);
+                break;
+            }
+            if (j == questionsArray[i].length-1) {
+                alert("Увы вы не угадали!");
+            }
+        }
+    }
+    alert("Игра окончена, ваш результат: "+ rightQuestion + ((rightQuestion > 1) ? " балла!" : " балл!"));
+</script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script type="text/javascript">
+    
+    var hwArray1 = [];
+    var hwArrayF = [];
+    function HomeworkFunction_A(arr,n){ // извиняюсь за название, но ничего не пришло в голову.
+        for(i=0; i<=n; i++){
+            arr[i] = i;
+        }
+        return arr;
+    }
+    HomeworkFunction_A(hwArray1, 100);
+    alert(hwArray1);
+
+    function HomeworkFunction_B(arr){
+        var sum = 0;
+        for(i=0; i<arr.length; i++){
+            sum += arr[i];
+        }
+        return sum;
+    }
+    alert("Сумма элементов массива: "+HomeworkFunction_B(hwArray1));
+
+    function HomeworkFunction_C(arr){
+        var max;
+        for(i=0; i<arr.length; i++){
+            if (!max || max < arr[i]) max = i;
+        }
+        return max;
+    }
+    alert("Max : "+HomeworkFunction_C(hwArray1));
+
+    function HomeworkFunction_D(arr){
+        var max;
+        for(i=0; i<arr.length; i++){
+            if (!max || max > arr[i]) max = i;
+        }
+        return max;
+    }
+    alert("Min : "+HomeworkFunction_D(hwArray1));
+
+    function HomeworkFunction_F(arr){
+        var arr_out = [];
+        for(i=0; i<arr.length; i++){
+            if (arr[i] % 2 == 0){
+                arr_out.push(i);
+            }
+        }
+        return arr_out;
+    }
+    hwArrayF = HomeworkFunction_F(hwArray1);
+    alert("Четные числа из массива: \n"+hwArrayF);
+
+</script>
