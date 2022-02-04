@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script type="text/javascript">
+    
+    let money = (parseInt)(prompt("Введите сумму вклада"))
+    let procent = prompt("Введите ежегодный %")
+    let ages = 5
+    let str = ""
+
+    for(i = 1; i <= ages; i++){
+        money = Math.ceil(money + (money * (procent / 100)))
+        alert("За "+i+" год ваш вклад составит: "+money+"$")
+        str += "За "+i+" год ваш вклад составит: "+money+"$ \n"
+    }
+    alert(str)
+</script>
