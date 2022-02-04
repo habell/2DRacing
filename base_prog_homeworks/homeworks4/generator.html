@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css"> 
+	<script type="text/javascript">
+
+		var keyarray = ["a","b","c","d","g","e","y","w","v","n","j","1","2","3","4","5","6","7","8","9","0"];
+		var password = "";
+
+		function generatePass() {
+			var userAnswer = document.getElementById("passlength").value;
+			for (i=0; i < userAnswer; i++){
+				password += keyarray[Math.round(Math.random() * keyarray.length-1)];
+			}
+			alert("Получите ваш безопасный пароль:\n"+password);
+		}
+
+	</script>
+</head>
+<body>
+
+<div class="content">
+	<div class="header">
+		<a href="index.html">Главная</a>
+		<a href="puzzle.html">Загадки</a>
+		<a href="#">Генератор паролей</a>
+		<a href="guess.html">Угадайка</a>
+	</div>
+
+<div class="contentWrap">
+    <div class="content">
+        <div class="center">
+
+			<h1>Генератор паролей</h1>
+
+			<div class="box">
+
+				<p>Введите желаемую длину пароля</p>
+				<input type="text" id="passlength">
+				<br>
+				<a href="#" onClick="generatePass();">Сгенерировать</a>
+
+			</div>
+
+        </div>
+    </div>
+</div>
+
+	
+
+</div>
+<div class="footer">
+	Copyright &copy; Timyr
+<div>
+
+
+</body>
+</html>
