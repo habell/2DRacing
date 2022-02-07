@@ -3,7 +3,7 @@
 
 namespace homeworks1
 {
-    // ХАБЛИЕВ
+    // ХАБЛИЕВ 
     class Lesson1HomeworkClass
     {
         public static void Print(string msg, int x, int y)
