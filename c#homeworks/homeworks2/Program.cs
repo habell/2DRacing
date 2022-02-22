@@ -10,7 +10,7 @@ namespace homeworks2
             if (x > y) if (y > z) return z;
             if (y > x) return x; else return y;
         }
-
+         
         static int GiveNumbersCount(int num)
         {
             int numbers = 0;
