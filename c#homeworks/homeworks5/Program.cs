@@ -5,7 +5,7 @@ namespace homeworks5
 {
     class Program
     {
-        // Хаблиев
+        // Хаблиев 
        static class Message
         {
             static string[] returnLoverStringArr(string str)
