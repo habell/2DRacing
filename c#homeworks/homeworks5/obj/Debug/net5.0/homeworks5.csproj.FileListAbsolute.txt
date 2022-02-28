@@ -1,0 +1,16 @@
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\bin\Debug\net5.0\homeworks5.exe
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\bin\Debug\net5.0\homeworks5.deps.json
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\bin\Debug\net5.0\homeworks5.runtimeconfig.json
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\bin\Debug\net5.0\homeworks5.runtimeconfig.dev.json
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\bin\Debug\net5.0\homeworks5.dll
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\bin\Debug\net5.0\ref\homeworks5.dll
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\bin\Debug\net5.0\homeworks5.pdb
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\obj\Debug\net5.0\homeworks5.csproj.AssemblyReference.cache
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\obj\Debug\net5.0\homeworks5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\obj\Debug\net5.0\homeworks5.AssemblyInfoInputs.cache
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\obj\Debug\net5.0\homeworks5.AssemblyInfo.cs
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\obj\Debug\net5.0\homeworks5.csproj.CoreCompileInputs.cache
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\obj\Debug\net5.0\homeworks5.dll
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\obj\Debug\net5.0\ref\homeworks5.dll
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\obj\Debug\net5.0\homeworks5.pdb
+C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks5\obj\Debug\net5.0\homeworks5.genruntimeconfig.cache

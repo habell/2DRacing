@@ -9,7 +9,7 @@ using homework4;
 namespace homeworks4
 {
     // Хаблиев
-    // Homework 1, 2, 3, 4
+    // Homework 1, 2, 3, 4 
 
     struct LoginPass
     {
