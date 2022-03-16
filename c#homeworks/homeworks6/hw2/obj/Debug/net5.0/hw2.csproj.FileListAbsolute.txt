@@ -1,0 +1,16 @@
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\bin\Debug\net5.0\hw2.exe
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\bin\Debug\net5.0\hw2.deps.json
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\bin\Debug\net5.0\hw2.runtimeconfig.json
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\bin\Debug\net5.0\hw2.runtimeconfig.dev.json
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\bin\Debug\net5.0\hw2.dll
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\bin\Debug\net5.0\ref\hw2.dll
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\bin\Debug\net5.0\hw2.pdb
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\obj\Debug\net5.0\hw2.csproj.AssemblyReference.cache
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\obj\Debug\net5.0\hw2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\obj\Debug\net5.0\hw2.AssemblyInfoInputs.cache
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\obj\Debug\net5.0\hw2.AssemblyInfo.cs
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\obj\Debug\net5.0\hw2.csproj.CoreCompileInputs.cache
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\obj\Debug\net5.0\hw2.dll
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\obj\Debug\net5.0\ref\hw2.dll
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\obj\Debug\net5.0\hw2.pdb
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks6\hw2\obj\Debug\net5.0\hw2.genruntimeconfig.cache
