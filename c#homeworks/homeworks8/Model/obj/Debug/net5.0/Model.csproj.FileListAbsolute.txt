@@ -1,0 +1,32 @@
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\bin\Debug\net5.0\Model.exe
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\bin\Debug\net5.0\Model.deps.json
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\bin\Debug\net5.0\Model.runtimeconfig.json
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\bin\Debug\net5.0\Model.runtimeconfig.dev.json
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\bin\Debug\net5.0\Model.dll
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\bin\Debug\net5.0\ref\Model.dll
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\bin\Debug\net5.0\Model.pdb
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\obj\Debug\net5.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\obj\Debug\net5.0\Model.AssemblyInfoInputs.cache
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\obj\Debug\net5.0\Model.AssemblyInfo.cs
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\obj\Debug\net5.0\Model.csproj.CoreCompileInputs.cache
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\obj\Debug\net5.0\Model.dll
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\obj\Debug\net5.0\ref\Model.dll
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\obj\Debug\net5.0\Model.pdb
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\obj\Debug\net5.0\Model.genruntimeconfig.cache
+D:\ШП\CS-1 20220207\CS-1_20220207\Model\obj\Debug\net5.0\Model.csproj.AssemblyReference.cache
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\bin\Debug\net5.0\Model.exe
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\bin\Debug\net5.0\Model.deps.json
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\bin\Debug\net5.0\Model.runtimeconfig.json
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\bin\Debug\net5.0\Model.runtimeconfig.dev.json
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\bin\Debug\net5.0\Model.dll
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\bin\Debug\net5.0\ref\Model.dll
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\bin\Debug\net5.0\Model.pdb
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\obj\Debug\net5.0\Model.csproj.AssemblyReference.cache
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\obj\Debug\net5.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\obj\Debug\net5.0\Model.AssemblyInfoInputs.cache
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\obj\Debug\net5.0\Model.AssemblyInfo.cs
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\obj\Debug\net5.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\obj\Debug\net5.0\Model.dll
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\obj\Debug\net5.0\ref\Model.dll
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\obj\Debug\net5.0\Model.pdb
+C:\Users\oseti\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks8\Model\obj\Debug\net5.0\Model.genruntimeconfig.cache
