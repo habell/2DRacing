@@ -50,12 +50,20 @@ namespace GB
 
             hw3.hw2.FindToZero();
         }
+
+        private static void CheckHomeworks_4()
+        {
+            hw4.hw1_2_3.DemoHW4_123();
+
+            hw4.hw4.DemoLogin();
+        }
         static void Main(string[] args)
         {
             PrintHWData();
             //CheckHomeworks_1();
             //CheckHomeworks_2();
-            CheckHomeworks_3();
+            //CheckHomeworks_3();
+            CheckHomeworks_4();
         }
     }
 }
