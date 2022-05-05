@@ -10,17 +10,17 @@ namespace GB.hw1
     {
         public static void SwapXY()
         {
-            int x = 5;
-            int y = 10;
+            int x = 21;
+            int y = 221;
             int z = 0;
-            Console.WriteLine($"x: {x} y: {y} Нажмите Enter что-бы х и у поменялись местами.");
+            Console.WriteLine($"x: {x} y: {y} Press any key if you need to change x and y.");
             Console.ReadLine();
 
             z = x;
             x = y;
             y = z;
 
-            Console.WriteLine($"x: {x} y: {y} Нажмите Enter что-бы заменить х и у местами ещё раз, другим методом.");
+            Console.WriteLine($"x: {x} y: {y} Press any key if you need to change x and y.");
             Console.ReadLine();
 
             (x, y) = (y, x);
