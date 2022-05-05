@@ -43,11 +43,19 @@ namespace GB
             var reshw7 = hw2.hw7.RecusiveNumbers(0, 100);
             Console.WriteLine(reshw7);
         }
+
+        private static void CheckHomeworks_3()
+        {
+            hw3.hw1.DemoComplex();
+
+            hw3.hw2.FindToZero();
+        }
         static void Main(string[] args)
         {
             PrintHWData();
             //CheckHomeworks_1();
-            CheckHomeworks_2();
+            //CheckHomeworks_2();
+            CheckHomeworks_3();
         }
     }
 }

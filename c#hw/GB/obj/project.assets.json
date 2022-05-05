@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oseti\\Desktop\\Homeworks\\GBHomeworks\\new\\GB\\GB.csproj",
+      "projectUniqueName": "C:\\Users\\oseti\\Desktop\\Homeworks\\GBHomeworks\\c#hw\\GB\\GB.csproj",
       "projectName": "GB",
-      "projectPath": "C:\\Users\\oseti\\Desktop\\Homeworks\\GBHomeworks\\new\\GB\\GB.csproj",
+      "projectPath": "C:\\Users\\oseti\\Desktop\\Homeworks\\GBHomeworks\\c#hw\\GB\\GB.csproj",
       "packagesPath": "C:\\Users\\oseti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oseti\\Desktop\\Homeworks\\GBHomeworks\\new\\GB\\obj\\",
+      "outputPath": "C:\\Users\\oseti\\Desktop\\Homeworks\\GBHomeworks\\c#hw\\GB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
