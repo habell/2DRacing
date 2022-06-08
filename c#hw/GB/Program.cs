@@ -57,13 +57,20 @@ namespace GB
 
             hw4.hw4.DemoLogin();
         }
+
+        private static void CheckHomeworks_5()
+        {
+            hw5.hw1.LogPassHW();
+        }
         static void Main(string[] args)
         {
             PrintHWData();
             //CheckHomeworks_1();
             //CheckHomeworks_2();
             //CheckHomeworks_3();
-            CheckHomeworks_4();
+            //CheckHomeworks_4();
+            CheckHomeworks_5();
+
         }
     }
 }

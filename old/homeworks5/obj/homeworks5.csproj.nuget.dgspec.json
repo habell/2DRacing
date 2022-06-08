@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\habel\\Desktop\\Homeworks\\GBHomeworks\\c#homeworks\\homeworks5\\homeworks5.csproj": {}
+    "C:\\Users\\oseti\\Desktop\\Homeworks\\GBHomeworks\\old\\homeworks5\\homeworks5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\habel\\Desktop\\Homeworks\\GBHomeworks\\c#homeworks\\homeworks5\\homeworks5.csproj": {
+    "C:\\Users\\oseti\\Desktop\\Homeworks\\GBHomeworks\\old\\homeworks5\\homeworks5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\habel\\Desktop\\Homeworks\\GBHomeworks\\c#homeworks\\homeworks5\\homeworks5.csproj",
+        "projectUniqueName": "C:\\Users\\oseti\\Desktop\\Homeworks\\GBHomeworks\\old\\homeworks5\\homeworks5.csproj",
         "projectName": "homeworks5",
-        "projectPath": "C:\\Users\\habel\\Desktop\\Homeworks\\GBHomeworks\\c#homeworks\\homeworks5\\homeworks5.csproj",
-        "packagesPath": "C:\\Users\\habel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\habel\\Desktop\\Homeworks\\GBHomeworks\\c#homeworks\\homeworks5\\obj\\",
+        "projectPath": "C:\\Users\\oseti\\Desktop\\Homeworks\\GBHomeworks\\old\\homeworks5\\homeworks5.csproj",
+        "packagesPath": "C:\\Users\\oseti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oseti\\Desktop\\Homeworks\\GBHomeworks\\old\\homeworks5\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\habel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\oseti\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -58,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }
