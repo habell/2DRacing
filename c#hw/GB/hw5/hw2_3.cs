@@ -52,5 +52,20 @@ namespace GB.hw5
             return resultableString;
         }
 
-
+        public static void homework_3(string str1, string str2)
+        {
+            string str1_ = "";
+            for (int i = 0; i < str1.Length - 1; i++)
+            {
+                str1_ += $"{str1[i + 1]}{str1[i]}";
+                i++;
+            }
+            Console.WriteLine(str1_);
+            Console.WriteLine(str2);
+            if (str1_ == str2)
+                Console.WriteLine($"Строка {str2} является перестановкой строки {str1}");
+            else
+                Console.WriteLine("Совпадения перестановки не обнаружено!");
+        }
+    }
 }

@@ -67,7 +67,7 @@ namespace GB
             Console.WriteLine(hw5.Message.homework_b(str, 'о'));
             Console.WriteLine(hw5.Message.homework_c(str));
 
-
+            hw5.Message.homework_3("abcd", "badc");
         }
         static void Main(string[] args)
         {
