@@ -61,6 +61,13 @@ namespace GB
         private static void CheckHomeworks_5()
         {
             hw5.hw1.LogPassHW();
+
+            var str = "Слово В Котором есть какие-то символы требует расчленения";
+            hw5.Message.homework_a(str, 5);
+            Console.WriteLine(hw5.Message.homework_b(str, 'о'));
+            Console.WriteLine(hw5.Message.homework_c(str));
+
+
         }
         static void Main(string[] args)
         {
