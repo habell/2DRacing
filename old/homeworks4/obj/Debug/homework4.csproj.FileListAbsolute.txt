@@ -1,7 +1,0 @@
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks4\bin\Debug\homework4.exe.config
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks4\bin\Debug\homework4.exe
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks4\bin\Debug\homework4.pdb
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks4\obj\Debug\homework4.csproj.AssemblyReference.cache
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks4\obj\Debug\homework4.csproj.CoreCompileInputs.cache
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks4\obj\Debug\homework4.exe
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks4\obj\Debug\homework4.pdb
