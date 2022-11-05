@@ -1,7 +1,0 @@
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks3\obj\Debug\homeworks3.csproj.AssemblyReference.cache
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks3\obj\Debug\homeworks3.csproj.CoreCompileInputs.cache
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks3\bin\Debug\homewoks3.exe.config
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks3\bin\Debug\homewoks3.exe
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks3\bin\Debug\homewoks3.pdb
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks3\obj\Debug\homewoks3.exe
-C:\Users\habel\Desktop\Homeworks\GBHomeworks\c#homeworks\homeworks3\obj\Debug\homewoks3.pdb
