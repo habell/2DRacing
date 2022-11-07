@@ -13,6 +13,7 @@ namespace _Root.CodeBase.Services.Input
             }
         }
 
+        public override bool IsActionButton() => UnityEngine.Input.GetMouseButton(0);
         public override bool IsActionButtonUp() => UnityEngine.Input.GetMouseButtonUp(0);
 
         private Vector2 GetUnityAxis() => new(UnityEngine.Input.GetAxis("Horizontal"), UnityEngine.Input.GetAxis("Vertical"));
