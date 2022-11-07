@@ -7,5 +7,6 @@ namespace _Root.CodeBase.Services.Input
         Vector2 Axis { get; }
 
         bool IsActionButtonUp();
+        bool IsActionButton();
     }
 }

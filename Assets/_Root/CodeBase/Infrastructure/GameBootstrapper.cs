@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace _Root.CodeBase.Infrastructure
 {
-    public class GameBootstraper : MonoBehaviour
+    public class GameBootstrapper : MonoBehaviour
     {
         private Game _game;
 
@@ -14,7 +14,10 @@ namespace _Root.CodeBase.Infrastructure
 
         private void Update()
         {
-            if (Input.GetMouseButtonUp(0)) print("click");
+            if (Input.GetMouseButtonUp(0))
+            {
+                print(Input.mousePosition);
+            }
         }
     }
 }

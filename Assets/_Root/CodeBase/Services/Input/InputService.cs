@@ -7,5 +7,6 @@ namespace _Root.CodeBase.Services.Input
         public abstract Vector2 Axis { get; }
 
         public abstract bool IsActionButtonUp();
+        public abstract bool IsActionButton();
     }
 }
