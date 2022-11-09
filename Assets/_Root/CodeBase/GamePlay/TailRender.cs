@@ -1,7 +1,5 @@
-using System;
 using _Root.CodeBase.Infrastructure;
 using _Root.CodeBase.Services.Input;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace _Root.CodeBase.GamePlay
@@ -23,7 +21,7 @@ namespace _Root.CodeBase.GamePlay
 
         private void Update()
         {
-            if(_inputService.IsActionButton()) _rectTransform.position = Input.mousePosition ; 
+            if (_inputService.IsActionButton()) _rectTransform.position = Input.mousePosition;
         }
     }
 }
