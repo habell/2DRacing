@@ -4,12 +4,6 @@ using UnityEngine.UI;
 
 namespace _Root.Scripts.Features.AbilitySystem.Abilities
 {
-    internal interface IAbilityButtonView
-    {
-        void Init(Sprite icon, UnityAction click);
-        void Deinit();
-    }
-
     internal class AbilityButtonView : MonoBehaviour
     {
         [SerializeField] private Image _icon;
