@@ -1,7 +1,7 @@
+using _Root.Scripts.Features.Inventory.Items;
 using UnityEngine;
-using Features.Inventory.Items;
 
-namespace Features.AbilitySystem.Abilities
+namespace _Root.Scripts.Features.AbilitySystem.Abilities
 {
     internal interface IAbilityItem
     {

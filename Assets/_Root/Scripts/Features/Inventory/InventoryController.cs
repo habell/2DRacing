@@ -1,11 +1,11 @@
-using Tool;
 using System;
-using UnityEngine;
+using _Root.Scripts.Features.Inventory.Items;
+using _Root.Scripts.Tool.ResourceManagement;
 using JetBrains.Annotations;
-using Features.Inventory.Items;
+using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Features.Inventory
+namespace _Root.Scripts.Features.Inventory
 {
     internal interface IInventoryController
     {

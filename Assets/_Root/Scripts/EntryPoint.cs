@@ -1,24 +1,27 @@
-using Profile;
+using _Root.Scripts.Profile;
 using UnityEngine;
 
-internal class EntryPoint : MonoBehaviour
+namespace _Root.Scripts
 {
-    private const float SpeedCar = 15f;
-    private const GameState InitialState = GameState.Start;
-
-    [SerializeField] private Transform _placeForUi;
-
-    private MainController _mainController;
-
-
-    private void Start()
+    internal class EntryPoint : MonoBehaviour
     {
-        var profilePlayer = new ProfilePlayer(SpeedCar, InitialState);
-        _mainController = new MainController(_placeForUi, profilePlayer);
-    }
+        private const float SpeedCar = 15f;
+        private const GameState InitialState = GameState.Start;
 
-    private void OnDestroy()
-    {
-        _mainController.Dispose();
+        [SerializeField] private Transform _placeForUi;
+
+        private MainController _mainController;
+
+
+        private void Start()
+        {
+            var profilePlayer = new ProfilePlayer(SpeedCar, InitialState);
+            _mainController = new MainController(_placeForUi, profilePlayer);
+        }
+
+        private void OnDestroy()
+        {
+            _mainController.Dispose();
+        }
     }
 }

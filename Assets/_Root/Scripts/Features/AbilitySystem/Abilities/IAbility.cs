@@ -1,4 +1,4 @@
-namespace Features.AbilitySystem.Abilities
+namespace _Root.Scripts.Features.AbilitySystem.Abilities
 {
     internal interface IAbility
     {

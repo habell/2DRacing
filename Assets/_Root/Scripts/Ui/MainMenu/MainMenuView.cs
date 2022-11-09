@@ -1,8 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
-namespace Ui
+namespace _Root.Scripts.Ui.MainMenu
 {
     internal class MainMenuView : MonoBehaviour
     {

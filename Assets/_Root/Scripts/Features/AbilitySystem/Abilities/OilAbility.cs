@@ -1,10 +1,10 @@
 namespace _Root.Scripts.Features.AbilitySystem.Abilities
 {
-    internal class StubAbility : IAbility
+    internal class OilAbility : IAbility
     {
-        public static readonly IAbility Default = new StubAbility();
-
         public void Apply(IAbilityActivator activator)
-        { }
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

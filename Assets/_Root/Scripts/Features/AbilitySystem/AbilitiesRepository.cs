@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Features.AbilitySystem.Abilities;
+using _Root.Scripts.Features.AbilitySystem.Abilities;
 
-namespace Features.AbilitySystem
+namespace _Root.Scripts.Features.AbilitySystem
 {
     internal interface IAbilitiesRepository : IRepository
     {

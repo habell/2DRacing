@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Features.Shed.Upgrade
+namespace _Root.Scripts.Features.Shed.Upgrade
 {
     internal interface IUpgradeHandlersRepository : IRepository
     {

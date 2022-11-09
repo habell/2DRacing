@@ -1,9 +1,9 @@
-using Tool;
-using Profile;
+using _Root.Scripts.Profile;
+using _Root.Scripts.Tool.ResourceManagement;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Ui
+namespace _Root.Scripts.Ui.MainMenu
 {
     internal class MainMenuController : BaseController
     {

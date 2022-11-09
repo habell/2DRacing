@@ -1,13 +1,13 @@
-using Tool;
-using Profile;
 using System;
 using System.Collections.Generic;
-using UnityEngine;
-using Features.Inventory;
-using Features.Shed.Upgrade;
+using _Root.Scripts.Features.Inventory;
+using _Root.Scripts.Features.Shed.Upgrade;
+using _Root.Scripts.Profile;
+using _Root.Scripts.Tool.ResourceManagement;
 using JetBrains.Annotations;
+using UnityEngine;
 
-namespace Features.Shed
+namespace _Root.Scripts.Features.Shed
 {
     internal interface IShedController
     {

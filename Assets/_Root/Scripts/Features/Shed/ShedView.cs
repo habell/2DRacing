@@ -1,8 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
-namespace Features.Shed
+namespace _Root.Scripts.Features.Shed
 {
     internal interface IShedView
     {

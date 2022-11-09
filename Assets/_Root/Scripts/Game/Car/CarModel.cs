@@ -1,6 +1,6 @@
-using Features.Shed.Upgrade;
+using _Root.Scripts.Features.Shed.Upgrade;
 
-namespace Game.Car
+namespace _Root.Scripts.Game.Car
 {
     internal class CarModel : IUpgradable
     {

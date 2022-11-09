@@ -1,8 +1,8 @@
+using _Root.Scripts.Tool.Reactive;
 using JoostenProductions;
-using Tool;
 using UnityEngine;
 
-namespace Game.InputLogic
+namespace _Root.Scripts.Game.InputLogic
 {
     internal class GyroscopeInputView : BaseInputView
     {

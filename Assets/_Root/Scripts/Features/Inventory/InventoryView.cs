@@ -1,9 +1,9 @@
 using System;
-using UnityEngine;
-using Features.Inventory.Items;
 using System.Collections.Generic;
+using _Root.Scripts.Features.Inventory.Items;
+using UnityEngine;
 
-namespace Features.Inventory
+namespace _Root.Scripts.Features.Inventory
 {
     internal interface IInventoryView
     {

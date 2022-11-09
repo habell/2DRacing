@@ -1,9 +1,9 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
-namespace Features.Inventory.Items
+namespace _Root.Scripts.Features.Inventory.Items
 {
     internal interface IItemView
     {

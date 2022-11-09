@@ -1,10 +1,10 @@
 using System;
 using System.Linq;
-using Features.Shed.Upgrade;
-using Features.Inventory.Items;
-using Features.AbilitySystem.Abilities;
+using _Root.Scripts.Features.AbilitySystem.Abilities;
+using _Root.Scripts.Features.Inventory.Items;
+using _Root.Scripts.Features.Shed.Upgrade;
 
-namespace Tool
+namespace _Root.Scripts.Tool.ResourceManagement
 {
     internal class ContentDataSourceLoader
     {

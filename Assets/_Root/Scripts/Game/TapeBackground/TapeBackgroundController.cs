@@ -1,7 +1,8 @@
-using Tool;
+using _Root.Scripts.Tool.Reactive;
+using _Root.Scripts.Tool.ResourceManagement;
 using UnityEngine;
 
-namespace Game.TapeBackground
+namespace _Root.Scripts.Game.TapeBackground
 {
     internal class TapeBackgroundController : BaseController
     {

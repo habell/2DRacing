@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Features.Inventory.Items
+namespace _Root.Scripts.Features.Inventory.Items
 {
     internal interface IItemsRepository : IRepository
     {

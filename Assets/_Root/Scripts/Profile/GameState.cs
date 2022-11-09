@@ -1,4 +1,4 @@
-namespace Profile
+namespace _Root.Scripts.Profile
 {
     internal enum GameState
     {

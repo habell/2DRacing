@@ -1,9 +1,9 @@
 using System;
-using UnityEngine;
 using JetBrains.Annotations;
+using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Features.AbilitySystem.Abilities
+namespace _Root.Scripts.Features.AbilitySystem.Abilities
 {
     internal class GunAbility : IAbility
     {

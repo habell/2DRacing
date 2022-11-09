@@ -1,7 +1,7 @@
 using JoostenProductions;
 using UnityEngine;
 
-namespace Game.InputLogic
+namespace _Root.Scripts.Game.InputLogic
 {
     internal class InputAcceleration : BaseInputView
     {

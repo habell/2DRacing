@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Tool
+namespace _Root.Scripts.Tool
 {
     internal class DontDestroyOnLoadObject : MonoBehaviour
     {

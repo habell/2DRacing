@@ -1,8 +1,8 @@
-using UnityEngine;
 using JoostenProductions;
+using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-namespace Game.InputLogic
+namespace _Root.Scripts.Game.InputLogic
 {
     internal class InputJoystickView : BaseInputView
     {

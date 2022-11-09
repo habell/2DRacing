@@ -4,14 +4,14 @@ namespace _Root.CodeBase.Infrastructure
 {
     internal class Game
     {
-        private static IInputService _inputService;
+        private static IInputService _inputInputService;
 
         public Game()
         {
-            _inputService ??= RegisterInputService();
+            _inputInputService ??= RegisterInputService();
         }
 
-        public static IInputService Service => _inputService;
+        public static IInputService InputService => _inputInputService;
 
         private IInputService RegisterInputService() => new DefaultInputService();
     }

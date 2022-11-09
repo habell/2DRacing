@@ -1,8 +1,8 @@
-using Tool;
-using Game.Car;
-using Features.Inventory;
+using _Root.Scripts.Features.Inventory;
+using _Root.Scripts.Game.Car;
+using _Root.Scripts.Tool.Reactive;
 
-namespace Profile
+namespace _Root.Scripts.Profile
 {
     internal class ProfilePlayer
     {

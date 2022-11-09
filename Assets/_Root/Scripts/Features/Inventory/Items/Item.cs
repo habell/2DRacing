@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Features.Inventory.Items
+namespace _Root.Scripts.Features.Inventory.Items
 {
     internal interface IItem
     {

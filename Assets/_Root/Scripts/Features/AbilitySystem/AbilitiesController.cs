@@ -1,10 +1,10 @@
-using Tool;
 using System;
-using UnityEngine;
+using _Root.Scripts.Features.AbilitySystem.Abilities;
+using _Root.Scripts.Tool.ResourceManagement;
 using JetBrains.Annotations;
-using Features.AbilitySystem.Abilities;
+using UnityEngine;
 
-namespace Features.AbilitySystem
+namespace _Root.Scripts.Features.AbilitySystem
 {
     internal interface IAbilitiesController
     { }

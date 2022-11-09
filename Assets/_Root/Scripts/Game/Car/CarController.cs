@@ -1,8 +1,8 @@
-using Tool;
+using _Root.Scripts.Features.AbilitySystem;
+using _Root.Scripts.Tool.ResourceManagement;
 using UnityEngine;
-using Features.AbilitySystem;
 
-namespace Game.Car
+namespace _Root.Scripts.Game.Car
 {
     internal class CarController : BaseController, IAbilityActivator
     {

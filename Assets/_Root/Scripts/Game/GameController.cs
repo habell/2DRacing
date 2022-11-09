@@ -1,12 +1,12 @@
-using Tool;
-using Profile;
+using _Root.Scripts.Features.AbilitySystem;
+using _Root.Scripts.Game.Car;
+using _Root.Scripts.Game.InputLogic;
+using _Root.Scripts.Game.TapeBackground;
+using _Root.Scripts.Profile;
+using _Root.Scripts.Tool.Reactive;
 using UnityEngine;
-using Game.Car;
-using Game.InputLogic;
-using Game.TapeBackground;
-using Features.AbilitySystem;
 
-namespace Game
+namespace _Root.Scripts.Game
 {
     internal class GameController : BaseController
     {

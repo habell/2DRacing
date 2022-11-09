@@ -1,8 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
-namespace Features.AbilitySystem.Abilities
+namespace _Root.Scripts.Features.AbilitySystem.Abilities
 {
     internal interface IAbilityButtonView
     {

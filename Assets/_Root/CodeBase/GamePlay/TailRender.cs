@@ -16,7 +16,7 @@ namespace _Root.CodeBase.GamePlay
 
         private void Start()
         {
-            _inputService = Game.Service;
+            _inputService = Infrastructure.Game.InputService;
         }
 
         private void Update()

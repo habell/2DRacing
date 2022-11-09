@@ -1,9 +1,9 @@
 using System;
-using UnityEngine;
 using System.Collections.Generic;
-using Features.AbilitySystem.Abilities;
+using _Root.Scripts.Features.AbilitySystem.Abilities;
+using UnityEngine;
 
-namespace Features.AbilitySystem
+namespace _Root.Scripts.Features.AbilitySystem
 {
     internal interface IAbilitiesView
     {

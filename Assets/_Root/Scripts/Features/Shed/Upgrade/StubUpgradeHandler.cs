@@ -1,4 +1,4 @@
-namespace Features.Shed.Upgrade
+namespace _Root.Scripts.Features.Shed.Upgrade
 {
     internal class StubUpgradeHandler : IUpgradeHandler
     {

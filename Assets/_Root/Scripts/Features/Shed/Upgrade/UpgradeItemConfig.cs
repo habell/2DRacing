@@ -1,7 +1,7 @@
+using _Root.Scripts.Features.Inventory.Items;
 using UnityEngine;
-using Features.Inventory.Items;
 
-namespace Features.Shed.Upgrade
+namespace _Root.Scripts.Features.Shed.Upgrade
 {
     [CreateAssetMenu(fileName = nameof(UpgradeItemConfig), menuName = "Configs/" + nameof(UpgradeItemConfig))]
     internal class UpgradeItemConfig : ScriptableObject

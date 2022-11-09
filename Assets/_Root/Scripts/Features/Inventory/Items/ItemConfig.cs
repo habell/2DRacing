@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Features.Inventory.Items
+namespace _Root.Scripts.Features.Inventory.Items
 {
     [CreateAssetMenu(fileName = nameof(ItemConfig), menuName = "Configs/" + nameof(ItemConfig))]
     internal class ItemConfig : ScriptableObject

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Features.AbilitySystem
+namespace _Root.Scripts.Features.AbilitySystem
 {
     internal interface IAbilityActivator
     {

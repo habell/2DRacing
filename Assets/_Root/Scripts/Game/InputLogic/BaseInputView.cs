@@ -1,7 +1,7 @@
-using Tool;
+using _Root.Scripts.Tool.Reactive;
 using UnityEngine;
 
-namespace Game.InputLogic
+namespace _Root.Scripts.Game.InputLogic
 {
     internal abstract class BaseInputView : MonoBehaviour
     {
