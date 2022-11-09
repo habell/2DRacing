@@ -15,11 +15,14 @@ namespace _Root.Scripts.Features.AbilitySystem
 
         protected override string GetKey(AbilityItemConfig config) => config.Id;
 
-        protected override IAbility CreateItem(AbilityItemConfig config) =>
-            config.Type switch
+        protected override IAbility CreateItem(AbilityItemConfig config)
+        {
+            switch (config.Type)
             {
-                AbilityType.Gun => new GunAbility(config),
-                _ => StubAbility.Default
-            };
+                case AbilityType.Gun: return new GunAbility(config);
+                case AbilityType.Oil: return new OilAbility(config);
+                default: return null;
+            }
+        }
     }
 }
