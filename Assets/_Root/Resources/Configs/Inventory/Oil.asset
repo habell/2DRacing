@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6118ce1540d041a4a9adc89d27299e04, type: 3}
   m_Name: Oil
   m_EditorClassIdentifier: 
-  <Id>k__BackingField: 
-  <Title>k__BackingField: 
-  <Icon>k__BackingField: {fileID: 0}
+  <Id>k__BackingField: oil
+  <Title>k__BackingField: Oil
+  <Icon>k__BackingField: {fileID: 21300000, guid: 86ce912717672b8429c58e6960c12e25, type: 3}
