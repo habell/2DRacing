@@ -222,7 +222,7 @@ namespace BattleScripts
         
         private void DontFight()
         {
-            throw new NotImplementedException();
+            Debug.Log("<color=#07FF00>Friendship wins!!!</color>");
         }
     }
 }
