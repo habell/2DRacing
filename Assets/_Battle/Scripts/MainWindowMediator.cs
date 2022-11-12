@@ -8,33 +8,64 @@ namespace BattleScripts
     internal class MainWindowMediator : MonoBehaviour
     {
         [Header("Player Stats")]
-        [SerializeField] private TMP_Text _countMoneyText;
-        [SerializeField] private TMP_Text _countHealthText;
-        [SerializeField] private TMP_Text _countPowerText;
+        [SerializeField]
+        private TMP_Text _countMoneyText;
+
+        [SerializeField]
+        private TMP_Text _countHealthText;
+
+        [SerializeField]
+        private TMP_Text _countPowerText;
+        
+        [SerializeField]
+        private TMP_Text _countCriminalText;
 
         [Header("Enemy Stats")]
-        [SerializeField] private TMP_Text _countPowerEnemyText;
+        [SerializeField]
+        private TMP_Text _countPowerEnemyText;
 
         [Header("Money Buttons")]
-        [SerializeField] private Button _addMoneyButton;
-        [SerializeField] private Button _minusMoneyButton;
+        [SerializeField]
+        private Button _addMoneyButton;
+
+        [SerializeField]
+        private Button _minusMoneyButton;
 
         [Header("Health Buttons")]
-        [SerializeField] private Button _addHealthButton;
-        [SerializeField] private Button _minusHealthButton;
+        [SerializeField]
+        private Button _addHealthButton;
+
+        [SerializeField]
+        private Button _minusHealthButton;
 
         [Header("Power Buttons")]
-        [SerializeField] private Button _addPowerButton;
-        [SerializeField] private Button _minusPowerButton;
+        [SerializeField]
+        private Button _addPowerButton;
+
+        [SerializeField]
+        private Button _minusPowerButton;
+        
+        [Header("Criminal Buttons")]
+        [SerializeField]
+        private Button _addCriminalButton;
+
+        [SerializeField]
+        private Button _minusCriminalButton;
 
         [Header("Other Buttons")]
-        [SerializeField] private Button _fightButton;
+        [SerializeField]
+        private Button _fightButton;
+
+        [SerializeField]
+        private Button _dontFightButton;
 
         private PlayerData _money;
         private PlayerData _heath;
         private PlayerData _power;
+        private PlayerData _criminal;
 
         private Enemy _enemy;
+
 
 
         private void Start()
@@ -44,6 +75,7 @@ namespace BattleScripts
             _money = CreatePlayerData(DataType.Money);
             _heath = CreatePlayerData(DataType.Health);
             _power = CreatePlayerData(DataType.Power);
+            _criminal = CreatePlayerData(DataType.Criminal);
 
             Subscribe();
         }
@@ -53,6 +85,7 @@ namespace BattleScripts
             DisposePlayerData(ref _money);
             DisposePlayerData(ref _heath);
             DisposePlayerData(ref _power);
+            DisposePlayerData(ref _criminal);
 
             Unsubscribe();
         }
@@ -83,20 +116,29 @@ namespace BattleScripts
 
             _addPowerButton.onClick.AddListener(IncreasePower);
             _minusPowerButton.onClick.AddListener(DecreasePower);
+            
+            _addCriminalButton.onClick.AddListener(IncreaseCriminal);
+            _minusCriminalButton.onClick.AddListener(DecreaseCriminal);
 
             _fightButton.onClick.AddListener(Fight);
+            _dontFightButton.onClick.AddListener(DontFight);
         }
+
+
 
         private void Unsubscribe()
         {
-            _addMoneyButton.onClick.RemoveAllListeners();
-            _minusMoneyButton.onClick.RemoveAllListeners();
+            _addMoneyButton.onClick.RemoveListener(IncreaseMoney);
+            _minusMoneyButton.onClick.RemoveListener(DecreaseMoney);
 
-            _addHealthButton.onClick.RemoveAllListeners();
-            _minusHealthButton.onClick.RemoveAllListeners();
+            _addHealthButton.onClick.RemoveListener(IncreaseHealth);
+            _minusHealthButton.onClick.RemoveListener(DecreaseHealth);
 
-            _addPowerButton.onClick.RemoveAllListeners();
-            _minusPowerButton.onClick.RemoveAllListeners();
+            _addPowerButton.onClick.RemoveListener(IncreasePower);
+            _minusPowerButton.onClick.RemoveListener(DecreasePower);
+            
+            _addCriminalButton.onClick.RemoveListener(IncreaseCriminal);
+            _minusCriminalButton.onClick.RemoveListener(DecreaseCriminal);
 
             _fightButton.onClick.RemoveAllListeners();
         }
@@ -111,13 +153,35 @@ namespace BattleScripts
         private void IncreasePower() => IncreaseValue(_power);
         private void DecreasePower() => DecreaseValue(_power);
 
+        private void IncreaseCriminal() => IncreaseValue(_criminal);
+
+        private void DecreaseCriminal() => DecreaseValue(_criminal);
+
         private void IncreaseValue(PlayerData playerData) => AddToValue(1, playerData);
         private void DecreaseValue(PlayerData playerData) => AddToValue(-1, playerData);
+
 
         private void AddToValue(int addition, PlayerData playerData)
         {
             playerData.Value += addition;
             ChangeDataWindow(playerData);
+        }
+
+        private int GetValue(PlayerData playerData)
+        {
+            return playerData.Value;
+        }
+
+        private void CheckDontFightButtonStatus()
+        {
+            if (GetValue(_criminal) < 3)
+            {
+                if(!_dontFightButton.IsActive()) _dontFightButton.gameObject.SetActive(true);
+            }
+            else
+            {
+                if(_dontFightButton.IsActive()) _dontFightButton.gameObject.SetActive(false);
+            }
         }
 
 
@@ -130,6 +194,8 @@ namespace BattleScripts
 
             int enemyPower = _enemy.CalcPower();
             _countPowerEnemyText.text = $"Enemy Power {enemyPower}";
+            
+            CheckDontFightButtonStatus();
         }
 
         private TMP_Text GetTextComponent(DataType dataType) =>
@@ -138,6 +204,7 @@ namespace BattleScripts
                 DataType.Money => _countMoneyText,
                 DataType.Health => _countHealthText,
                 DataType.Power => _countPowerText,
+                DataType.Criminal => _countCriminalText,
                 _ => throw new ArgumentException($"Wrong {nameof(DataType)}")
             };
 
@@ -151,6 +218,11 @@ namespace BattleScripts
             string message = isVictory ? "Win" : "Lose";
 
             Debug.Log($"<color={color}>{message}!!!</color>");
+        }
+        
+        private void DontFight()
+        {
+            throw new NotImplementedException();
         }
     }
 }
