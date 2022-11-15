@@ -1,2 +1,2 @@
 # 2DRacing
-GB WHs
+GB HW
