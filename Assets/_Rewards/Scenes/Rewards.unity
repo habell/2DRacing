@@ -1195,7 +1195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 063f1b92edbd4b8c812689152aa9dc57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <TimeCooldown>k__BackingField: 860
+  <TimeCooldown>k__BackingField: 100
   <TimeDeadline>k__BackingField: 2590
   <Rewards>k__BackingField:
   - <RewardType>k__BackingField: 0
