@@ -1,18 +1,15 @@
-using _Root.CodeBase.Services.Input;
+﻿using _Root.BaseCode.Services.Input;
 
-namespace _Root.CodeBase.Infrastructure
+namespace _Root.BaseCode.Infrastructure
 {
     internal class Game
     {
-        private static IInputService _inputInputService;
+        public static IInputService InputService;
+        public readonly GameStateMachine StateMachine;
 
-        public Game()
+        public Game(ICoroutineRunner coroutineRunner)
         {
-            _inputInputService ??= RegisterInputService();
+            StateMachine = new GameStateMachine(new SceneLoader(coroutineRunner));
         }
-
-        public static IInputService InputService => _inputInputService;
-
-        private IInputService RegisterInputService() => new DefaultInputService();
     }
-}   
+}
