@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing.Printing;
+using System.Text;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -16,6 +18,8 @@ namespace Rewards
         private bool _isGetReward;
         private bool _isInitialized;
 
+        private StringBuilder _simpleProgressBar;
+
 
         public DailyRewardController(DailyRewardView view) =>
             _view = view;
@@ -25,6 +29,8 @@ namespace Rewards
         {
             if (_isInitialized)
                 return;
+
+            _simpleProgressBar = new StringBuilder();
 
             InitSlots();
             RefreshUi();
@@ -184,11 +190,17 @@ namespace Rewards
                 DateTime nextClaimTime = _view.TimeGetReward.Value.AddSeconds(_view.TimeCooldown);
                 TimeSpan currentClaimCooldown = nextClaimTime - DateTime.UtcNow;
 
-                string timeGetReward =
-                    $"{currentClaimCooldown.Days:D2}:{currentClaimCooldown.Hours:D2}:" +
-                    $"{currentClaimCooldown.Minutes:D2}:{currentClaimCooldown.Seconds:D2}";
-
-                return $"Time to get the next reward: {timeGetReward}";
+                var timeRow =  _view.TimeCooldown / 10;
+                var secondsPassed = _view.TimeCooldown - currentClaimCooldown.TotalSeconds;
+                _simpleProgressBar.Clear();
+                for (int i = 0; i < 10; i++)
+                {
+                    if ((timeRow * i) < secondsPassed)
+                        _simpleProgressBar.Append(" |");
+                    else
+                        _simpleProgressBar.Append("_"); 
+                }
+                return $"Next reward progress bar: [{_simpleProgressBar} ]";
             }
 
             return string.Empty;
