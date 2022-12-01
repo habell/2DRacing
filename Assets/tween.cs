@@ -6,10 +6,17 @@ using UnityEngine;
 
 public class tween : MonoBehaviour
 {
-    private DOTween _doTween;
-
     private void Awake()
     {
-        _doTween = new DOTween();
+        DOTween.Init();
+        transform.DOMoveX(10, 10, false);
+    }
+
+    public void TestTween()
+    {
+        var pos = transform.position;
+        var scale = new Vector3(pos.x, pos.y, pos.z); 
+        transform.DOScale(this, scale, 2f);
+        transform.DOScaleX(10, 3);
     }
 }
