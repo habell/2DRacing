@@ -15,8 +15,7 @@ public class tween : MonoBehaviour
     public void TestTween()
     {
         var pos = transform.position;
-        var scale = new Vector3(pos.x, pos.y, pos.z); 
-        transform.DOScale(this, scale, 2f);
+        var scale = new Vector3(pos.x, pos.y, pos.z);
         transform.DOScaleX(10, 3);
     }
 }
