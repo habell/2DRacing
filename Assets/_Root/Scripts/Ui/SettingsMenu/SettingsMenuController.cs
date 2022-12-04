@@ -1,9 +1,9 @@
-using _Root.Scripts.Profile;
-using _Root.Scripts.Tool.ResourceManagement;
+using Profile;
+using Tool;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace _Root.Scripts.Ui.SettingsMenu
+namespace Ui
 {
     internal class SettingsMenuController : BaseController
     {

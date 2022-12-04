@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace _Root.Scripts.Tool.ResourceManagement
+namespace Tool
 {
     internal static class ResourcesLoader
     {

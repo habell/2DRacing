@@ -1,27 +1,34 @@
-using _Root.Scripts.Profile;
+using Profile;
 using UnityEngine;
 
-namespace _Root.Scripts
+internal class EntryPoint : MonoBehaviour
 {
-    internal class EntryPoint : MonoBehaviour
+    [Header("Initial Settings")]
+    [SerializeField] private InitialProfilePlayer _initialProfilePlayer;
+
+    [Header("Scene Objects")]
+    [SerializeField] private Transform _placeForUi;
+
+    private MainController _mainController;
+
+
+    private void Start()
     {
-        private const float SpeedCar = 15f;
-        private const GameState InitialState = GameState.Start;
-
-        [SerializeField] private Transform _placeForUi;
-
-        private MainController _mainController;
-
-
-        private void Start()
-        {
-            var profilePlayer = new ProfilePlayer(SpeedCar, InitialState);
-            _mainController = new MainController(_placeForUi, profilePlayer);
-        }
-
-        private void OnDestroy()
-        {
-            _mainController.Dispose();
-        }
+        var profilePlayer = CreateProfilePlayer(_initialProfilePlayer);
+        _mainController = new MainController(_placeForUi, profilePlayer);
     }
+
+    private void OnDestroy()
+    {
+        _mainController.Dispose();
+    }
+
+
+    private ProfilePlayer CreateProfilePlayer(InitialProfilePlayer initialProfilePlayer) =>
+        new ProfilePlayer
+        (
+            initialProfilePlayer.Car.Speed,
+            initialProfilePlayer.Car.JumpHeight,
+            initialProfilePlayer.State
+        );
 }

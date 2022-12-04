@@ -1,4 +1,4 @@
-namespace _Root.Scripts.Tool.ResourceManagement
+namespace Tool
 {
     internal readonly struct ResourcePath
     {

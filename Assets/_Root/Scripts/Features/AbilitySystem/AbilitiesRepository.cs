@@ -1,28 +1,26 @@
 using System.Collections.Generic;
-using _Root.Scripts.Features.AbilitySystem.Abilities;
+using Features.AbilitySystem.Abilities;
 
-namespace _Root.Scripts.Features.AbilitySystem
+namespace Features.AbilitySystem
 {
     internal interface IAbilitiesRepository : IRepository
     {
         IReadOnlyDictionary<string, IAbility> Items { get; }
     }
 
-    internal class AbilitiesRepository : BaseRepository<string, IAbility, AbilityItemConfig>
+    internal class AbilitiesRepository : BaseRepository<string, IAbility, IAbilityItem>, IAbilitiesRepository
     {
-        public AbilitiesRepository(IEnumerable<AbilityItemConfig> configs) : base(configs)
+        public AbilitiesRepository(IEnumerable<IAbilityItem> abilityItems) : base(abilityItems)
         { }
 
-        protected override string GetKey(AbilityItemConfig config) => config.Id;
+        protected override string GetKey(IAbilityItem abilityItem) => abilityItem.Id;
 
-        protected override IAbility CreateItem(AbilityItemConfig config)
-        {
-            switch (config.Type)
+        protected override IAbility CreateItem(IAbilityItem abilityItem) =>
+            abilityItem.Type switch
             {
-                case AbilityType.Gun: return new GunAbility(config);
-                case AbilityType.Oil: return new OilAbility(config);
-                default: return null;
-            }
-        }
+                AbilityType.Gun => new GunAbility(abilityItem),
+                AbilityType.Jump => new JumpAbility(abilityItem),
+                _ => StubAbility.Default
+            };
     }
 }

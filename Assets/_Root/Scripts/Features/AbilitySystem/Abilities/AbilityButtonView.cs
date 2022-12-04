@@ -1,9 +1,15 @@
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
-namespace _Root.Scripts.Features.AbilitySystem.Abilities
+namespace Features.AbilitySystem.Abilities
 {
+    internal interface IAbilityButtonView
+    {
+        void Init(Sprite icon, UnityAction click);
+        void Deinit();
+    }
+
     internal class AbilityButtonView : MonoBehaviour
     {
         [SerializeField] private Image _icon;

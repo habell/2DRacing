@@ -1,21 +1,13 @@
-using JoostenProductions;
 using UnityEngine;
 
-namespace _Root.Scripts.Game.InputLogic
+namespace Game.InputLogic
 {
     internal class InputAcceleration : BaseInputView
     {
         [SerializeField] private float _inputMultiplier = 0.2f;
 
 
-        private void Start() =>
-            UpdateManager.SubscribeToUpdate(Move);
-
-        private void OnDestroy() =>
-            UpdateManager.UnsubscribeFromUpdate(Move);
-
-
-        private void Move()
+        protected override void Move()
         {
             Vector3 direction = CalcDirection();
             float moveValue = Speed * _inputMultiplier * Time.deltaTime * direction.x;
@@ -28,6 +20,7 @@ namespace _Root.Scripts.Game.InputLogic
             else
                 OnLeftMove(abs);
         }
+
 
         private Vector3 CalcDirection()
         {

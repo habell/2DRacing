@@ -1,7 +1,8 @@
-using _Root.Scripts.Tool.Reactive;
+using Tool;
 using UnityEngine;
+using JoostenProductions;
 
-namespace _Root.Scripts.Game.InputLogic
+namespace Game.InputLogic
 {
     internal abstract class BaseInputView : MonoBehaviour
     {
@@ -9,6 +10,13 @@ namespace _Root.Scripts.Game.InputLogic
 
         private SubscriptionProperty<float> _leftMove;
         private SubscriptionProperty<float> _rightMove;
+
+
+        private void Start() =>
+            UpdateManager.SubscribeToUpdate(Move);
+
+        private void OnDestroy() =>
+            UpdateManager.UnsubscribeFromUpdate(Move);
 
 
         public virtual void Init(
@@ -21,6 +29,8 @@ namespace _Root.Scripts.Game.InputLogic
             Speed = speed;
         }
 
+
+        protected abstract void Move();
 
         protected void OnLeftMove(float value) =>
             _leftMove.Value = value;

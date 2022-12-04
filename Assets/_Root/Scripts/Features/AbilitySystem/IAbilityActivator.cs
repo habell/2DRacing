@@ -1,9 +1,10 @@
 using UnityEngine;
 
-namespace _Root.Scripts.Features.AbilitySystem
+namespace Features.AbilitySystem
 {
     internal interface IAbilityActivator
     {
+        float JumpHeight { get; }
         GameObject ViewGameObject { get; }
     }
 }

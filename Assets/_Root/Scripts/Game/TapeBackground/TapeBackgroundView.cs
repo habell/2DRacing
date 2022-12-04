@@ -1,7 +1,7 @@
-using _Root.Scripts.Tool.Reactive;
+using Tool;
 using UnityEngine;
 
-namespace _Root.Scripts.Game.TapeBackground
+namespace Game.TapeBackground
 {
     internal class TapeBackgroundView : MonoBehaviour
     {

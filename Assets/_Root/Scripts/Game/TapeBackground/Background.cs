@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace _Root.Scripts.Game.TapeBackground
+namespace Game.TapeBackground
 {
     [RequireComponent(typeof(SpriteRenderer))]
     internal class Background : MonoBehaviour

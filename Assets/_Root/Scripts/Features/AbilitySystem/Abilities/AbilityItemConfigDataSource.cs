@@ -1,7 +1,7 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
-namespace _Root.Scripts.Features.AbilitySystem.Abilities
+namespace Features.AbilitySystem.Abilities
 {
     [CreateAssetMenu(
         fileName = nameof(AbilityItemConfigDataSource),
