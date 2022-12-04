@@ -1,15 +1,12 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-public class tween : MonoBehaviour
+public class Tween : MonoBehaviour
 {
     private void Awake()
     {
         DOTween.Init();
-        transform.DOMoveX(10, 10, false);
+        transform.DOMoveX(5, 10, false);
     }
 
     public void TestTween()
