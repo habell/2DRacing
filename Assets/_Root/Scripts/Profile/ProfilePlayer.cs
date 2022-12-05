@@ -1,26 +1,29 @@
-using _Root.Scripts.Features.Inventory;
-using _Root.Scripts.Game.Car;
-using _Root.Scripts.Tool.Reactive;
+using Tool;
+using Game.Car;
+using Features.Inventory;
+using Features.Rewards.Currency;
 
-namespace _Root.Scripts.Profile
+namespace Profile
 {
     internal class ProfilePlayer
     {
         public readonly SubscriptionProperty<GameState> CurrentState;
         public readonly CarModel CurrentCar;
         public readonly InventoryModel Inventory;
+        public readonly CurrencyModel Currency;
 
 
-        public ProfilePlayer(float speedCar, GameState initialState) : this(speedCar)
+        public ProfilePlayer(float speedCar, float jumpHeightCar, GameState initialState) : this(speedCar, jumpHeightCar)
         {
             CurrentState.Value = initialState;
         }
 
-        public ProfilePlayer(float speedCar)
+        public ProfilePlayer(float speedCar, float jumpHeightCar)
         {
             CurrentState = new SubscriptionProperty<GameState>();
-            CurrentCar = new CarModel(speedCar);
+            CurrentCar = new CarModel(speedCar, jumpHeightCar);
             Inventory = new InventoryModel();
+            Currency = new CurrencyModel();
         }
     }
 }

@@ -1,6 +1,6 @@
 using System;
 
-namespace _Root.Scripts.Tool.Reactive
+namespace Tool
 {
     internal interface ISubscriptionProperty<out TValue>
     {

@@ -1,8 +1,9 @@
-namespace _Root.Scripts.Features.Shed.Upgrade
+namespace Features.Shed.Upgrade
 {
     internal enum UpgradeType
     {
         None,
         Speed,
+        JumpHeight
     }
 }

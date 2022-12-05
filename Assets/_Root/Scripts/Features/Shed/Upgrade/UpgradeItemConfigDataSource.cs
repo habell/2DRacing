@@ -1,7 +1,7 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
-namespace _Root.Scripts.Features.Shed.Upgrade
+namespace Features.Shed.Upgrade
 {
     [CreateAssetMenu(
         fileName = nameof(UpgradeItemConfigDataSource),

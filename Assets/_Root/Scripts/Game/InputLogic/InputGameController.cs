@@ -1,9 +1,8 @@
-using _Root.Scripts.Game.Car;
-using _Root.Scripts.Tool.Reactive;
-using _Root.Scripts.Tool.ResourceManagement;
+using Tool;
+using Game.Car;
 using UnityEngine;
 
-namespace _Root.Scripts.Game.InputLogic
+namespace Game.InputLogic
 {
     internal class InputGameController : BaseController
     {

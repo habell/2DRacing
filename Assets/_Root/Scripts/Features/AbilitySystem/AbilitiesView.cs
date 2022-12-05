@@ -1,13 +1,13 @@
 using System;
-using System.Collections.Generic;
-using _Root.Scripts.Features.AbilitySystem.Abilities;
 using UnityEngine;
+using System.Collections.Generic;
+using Features.AbilitySystem.Abilities;
 
-namespace _Root.Scripts.Features.AbilitySystem
+namespace Features.AbilitySystem
 {
     internal interface IAbilitiesView
     {
-        void Display(IReadOnlyList<IAbilityItem> abilityItems, Action<string> clicked);
+        void Display(IEnumerable<IAbilityItem> abilityItems, Action<string> clicked);
         void Clear();
     }
 
@@ -22,7 +22,7 @@ namespace _Root.Scripts.Features.AbilitySystem
         private void OnDestroy() => Clear();
 
 
-        public void Display(IReadOnlyList<IAbilityItem> abilityItems, Action<string> clicked)
+        public void Display(IEnumerable<IAbilityItem> abilityItems, Action<string> clicked)
         {
             Clear();
 

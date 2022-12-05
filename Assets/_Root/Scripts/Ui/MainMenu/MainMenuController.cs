@@ -1,9 +1,9 @@
-using _Root.Scripts.Profile;
-using _Root.Scripts.Tool.ResourceManagement;
+using Tool;
+using Profile;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace _Root.Scripts.Ui.MainMenu
+namespace Ui
 {
     internal class MainMenuController : BaseController
     {
@@ -16,7 +16,16 @@ namespace _Root.Scripts.Ui.MainMenu
         {
             _profilePlayer = profilePlayer;
             _view = LoadView(placeForUi);
-            _view.Init(StartGame, OpenSettings, OpenShed);
+            _view.Init(StartGame, OpenSettings, OpenShed, OpenDailyReward, ExitGame);
+
+            SubscribeAds();
+            SubscribeIAP();
+        }
+
+        protected override void OnDispose()
+        {
+            UnsubscribeAds();
+            UnsubscribeIAP();
         }
 
 
@@ -37,5 +46,43 @@ namespace _Root.Scripts.Ui.MainMenu
 
         private void OpenShed() =>
             _profilePlayer.CurrentState.Value = GameState.Shed;
+        
+
+        private void OpenDailyReward() =>
+            _profilePlayer.CurrentState.Value = GameState.DailyReward;
+
+        private void ExitGame()
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#endif
+            Application.Quit();
+        }
+
+        private void SubscribeAds()
+        {
+
+        }
+
+        private void UnsubscribeAds()
+        {
+
+        }
+
+        private void SubscribeIAP()
+        {
+
+        }
+
+        private void UnsubscribeIAP()
+        {
+
+        }
+
+        private void OnAdsFinished() => Log("You've received a reward for ads!");
+        private void OnAdsCancelled() => Log("Receiving a reward for ads has been interrupted!");
+
+        private void OnIAPSucceed() => Log("Purchase succeed");
+        private void OnIAPFailed() => Log("Purchase failed");
     }
 }

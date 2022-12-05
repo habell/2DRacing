@@ -1,4 +1,4 @@
-namespace _Root.Scripts.Features.AbilitySystem.Abilities
+namespace Features.AbilitySystem.Abilities
 {
     internal class StubAbility : IAbility
     {

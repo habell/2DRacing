@@ -1,9 +1,8 @@
-using JoostenProductions;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityStandardAssets.CrossPlatformInput;
 
-namespace _Root.Scripts.Game.InputLogic
+namespace Game.InputLogic
 {
     internal class FloatInputJoystick : BaseInputView, IPointerDownHandler, IPointerUpHandler, IDragHandler
     {
@@ -17,13 +16,6 @@ namespace _Root.Scripts.Game.InputLogic
         [SerializeField] private float _inputMultiplier = 10;
 
         private bool _usingJoystick;
-
-
-        private void Start() =>
-            UpdateManager.SubscribeToUpdate(Move);
-
-        private void OnDestroy() =>
-            UpdateManager.UnsubscribeFromUpdate(Move);
 
 
         public void OnPointerDown(PointerEventData eventData)
@@ -60,7 +52,7 @@ namespace _Root.Scripts.Game.InputLogic
             _container.alpha = active ? _enabledAlpha : _disabledAlpha;
 
 
-        private void Move()
+        protected override void Move()
         {
             if (!_usingJoystick)
                 return;

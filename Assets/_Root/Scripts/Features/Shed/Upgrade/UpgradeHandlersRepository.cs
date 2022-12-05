@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace _Root.Scripts.Features.Shed.Upgrade
+namespace Features.Shed.Upgrade
 {
     internal interface IUpgradeHandlersRepository : IRepository
     {
@@ -20,6 +20,7 @@ namespace _Root.Scripts.Features.Shed.Upgrade
             config.Type switch
             {
                 UpgradeType.Speed => new SpeedUpgradeHandler(config.Value),
+                UpgradeType.JumpHeight => new JumpHeightUpgradeHandler(config.Value),
                 _ => StubUpgradeHandler.Default
             };
     }

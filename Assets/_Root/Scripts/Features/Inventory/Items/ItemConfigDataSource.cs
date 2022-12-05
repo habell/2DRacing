@@ -1,7 +1,7 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
-namespace _Root.Scripts.Features.Inventory.Items
+namespace Features.Inventory.Items
 {
     [CreateAssetMenu(fileName = nameof(ItemConfigDataSource), menuName = "Configs/" + nameof(ItemConfigDataSource))]
     internal class ItemConfigDataSource : ScriptableObject

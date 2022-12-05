@@ -1,4 +1,4 @@
-namespace _Root.Scripts.Profile
+namespace Profile
 {
     internal enum GameState
     {
@@ -6,6 +6,8 @@ namespace _Root.Scripts.Profile
         Start,
         Settings,
         Shed,
-        Game
+        DailyReward,
+        Game,
+        Fight
     }
 }
