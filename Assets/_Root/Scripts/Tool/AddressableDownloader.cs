@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -14,9 +12,9 @@ namespace _Root.Scripts.Tool
 
         private const string PrefabID = "TestPrefab";
         
-        [SerializeField]
+        [SerializeField] 
         private GameObject _prefab;
-
+        // https://drive.google.com/uc?export=download&id=1Lnr_k3WhINdq4sqKf3Qx3Yh2asqHt_pN
         [SerializeField]
         private Transform _parent;
         

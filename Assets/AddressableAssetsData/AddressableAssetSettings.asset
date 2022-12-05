@@ -63,9 +63,9 @@ MonoBehaviour:
       - m_Id: 30f44559b6f7d2843bf7a2ac16ff021a
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 28b19e67506a70a4885a8fcbf3faa757
-        m_Value: ServerData/[BuildTarget]
+        m_Value: /
       - m_Id: 930751788bde0ec47adbed34d4d012f1
-        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+        m_Value: https://drive.google.com/uc?export=download&id=1Lnr_k3WhINdq4sqKf3Qx3Yh2asqHt_pN
     - m_InheritedParent: 
       m_Id: 220fea5689802f14a897e6a03478c5f5
       m_ProfileName: GoogleDriveDownloader
@@ -77,9 +77,9 @@ MonoBehaviour:
       - m_Id: 30f44559b6f7d2843bf7a2ac16ff021a
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 28b19e67506a70a4885a8fcbf3faa757
-        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+        m_Value: ServerData/[BuildTarget]
       - m_Id: 930751788bde0ec47adbed34d4d012f1
-        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+        m_Value: https://drive.google.com/uc?export=download&id=1KuNXggNLKHes-lknJIgU3Aoq8UMYB5hp/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: fc934911db60ab543a327178a5b81a3b
       m_Name: BuildTarget
