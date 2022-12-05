@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
   m_Name: AddressableAssetSettings
   m_EditorClassIdentifier: 
-  m_DefaultGroup: a93f0da4c3eee2b439de8556688fc2ed
+  m_DefaultGroup: 726073d3c13ca1940a9cecbb4713ae8a
   m_CachedHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -44,6 +44,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: deb640c5d9c064440940b03f04d0ce0e, type: 2}
   - {fileID: 11400000, guid: a58263b89ba50134081872b220e11265, type: 2}
   - {fileID: 11400000, guid: c30753881c7f5f5499522fcce8ed377c, type: 2}
+  - {fileID: 11400000, guid: 67469a8f8ca73954981c301e66914987, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -65,6 +66,20 @@ MonoBehaviour:
         m_Value: ServerData/[BuildTarget]
       - m_Id: 930751788bde0ec47adbed34d4d012f1
         m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+    - m_InheritedParent: 
+      m_Id: 220fea5689802f14a897e6a03478c5f5
+      m_ProfileName: GoogleDriveDownloader
+      m_Values:
+      - m_Id: fc934911db60ab543a327178a5b81a3b
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 175843e3d10c1844c99e31d40b7cfcf0
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 30f44559b6f7d2843bf7a2ac16ff021a
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 28b19e67506a70a4885a8fcbf3faa757
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 930751788bde0ec47adbed34d4d012f1
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
     m_ProfileEntryNames:
     - m_Id: fc934911db60ab543a327178a5b81a3b
       m_Name: BuildTarget

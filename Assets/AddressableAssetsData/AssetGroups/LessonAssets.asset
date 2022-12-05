@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
   m_Name: LessonAssets
   m_EditorClassIdentifier: 
-  m_GroupName: Packed Assets
+  m_GroupName: LessonAssets
   m_Data:
     m_SerializedData: []
   m_GUID: 726073d3c13ca1940a9cecbb4713ae8a
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 3508c79d3717c754d8f90ca8f57d0a8f
+    m_Address: TestPrefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 052316073ec4b554db6085dcb8d75d90, type: 2}
   m_SchemaSet:
