@@ -95,6 +95,27 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.addressables": {
+      "version": "1.19.19",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.scriptablebuildpipeline": "1.19.6",
+        "com.unity.modules.assetbundle": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.assetbundlebrowser": {
+      "version": "git@github.com:Unity-Technologies/AssetBundles-Browser.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b7c279278d1a343c6957c9f15b45173d3211f01c"
+    },
     "com.unity.burst": {
       "version": "1.6.6",
       "depth": 3,
@@ -202,6 +223,13 @@
     "com.unity.profiling.core": {
       "version": "1.0.2",
       "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.scriptablebuildpipeline": {
+      "version": "1.20.1",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
