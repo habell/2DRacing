@@ -6,30 +6,60 @@ namespace _Root.Scripts
 {
     public class NotificationSystem : MonoBehaviour
     {
-        private AndroidNotificationChannel _defaultNotificationChanel;
-
+        private AndroidNotificationChannel _androidSettingsChannel;
+        private const string AndroidChannelID = "AndroidNotificationID";
         private int _id;
+        private AndroidNotification _notification;
+
         private void Start()
         {
-            _defaultNotificationChanel = new AndroidNotificationChannel()
+            var ctorNotificationChannel = new AndroidNotificationChannel("TestID", "TestName", "TestDesc", Importance.High);
+            _androidSettingsChannel = new AndroidNotificationChannel()
             {
-                Id = "default_channel",
-                Name = "Default Chanel",
+                Id = AndroidChannelID,
+                Name = "Lesson Notifier",
                 Description = "Test notification",
-                Importance = Importance.Default,
+                Importance = Importance.High,
+                CanBypassDnd = true,
+                CanShowBadge = true,
+                EnableLights = true,
+                EnableVibration = true,
+                LockScreenVisibility = LockScreenVisibility.Public
             };
-            AndroidNotificationCenter.RegisterNotificationChannel(_defaultNotificationChanel);
+            AndroidNotificationCenter.RegisterNotificationChannel(_androidSettingsChannel);
 
-            AndroidNotification notification = new AndroidNotification()
+            _notification = new AndroidNotification()
             {
-                Title = "Test",
-                Text = "test text",
-                SmallIcon = "default",
-                LargeIcon = "default",
-                FireTime = DateTime.Now.AddSeconds(10),
+                RepeatInterval = TimeSpan.FromSeconds(2)
+            }; 
+            
+        }
+        public void SendNotification()
+        {
+            var ctorNotificationChannel = new AndroidNotificationChannel("TestID", "TestName", "TestDesc", Importance.High);
+            _androidSettingsChannel = new AndroidNotificationChannel()
+            {
+                Id = AndroidChannelID,
+                Name = "Lesson Notifier",
+                Description = "Test notification",
+                Importance = Importance.High,
+                CanBypassDnd = true,
+                CanShowBadge = true,
+                EnableLights = true,
+                EnableVibration = true,
+                LockScreenVisibility = LockScreenVisibility.Public
             };
+            AndroidNotificationCenter.RegisterNotificationChannel(_androidSettingsChannel);
 
-            _id = AndroidNotificationCenter.SendNotification(notification, "default_channel");
+            _notification = new AndroidNotification()
+            {
+                RepeatInterval = TimeSpan.FromSeconds(2)
+            }; 
+            print(_id);
+            _id = AndroidNotificationCenter.SendNotification(_notification, AndroidChannelID);
+            print(_id);
+            _id = AndroidNotificationCenter.SendNotification(_notification, "TestID");
+            print(_id);
         }
     }
 }
