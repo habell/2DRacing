@@ -151,7 +151,6 @@ struct IsUnmanagedAttribute_t613A5BF19DFA2D6776C1DF030C7AD37F7AF8E4EE  : public 
 };
 
 // Unity.Profiling.LowLevel.Unsafe.ProfilerMarkerData
-#pragma pack(push, tp, 1)
 struct ProfilerMarkerData_tC01B15D61B904B700E4DE1FFB3452F2C5C2789A2 
 {
 	union
@@ -228,7 +227,6 @@ struct ProfilerMarkerData_tC01B15D61B904B700E4DE1FFB3452F2C5C2789A2
 		uint8_t ProfilerMarkerData_tC01B15D61B904B700E4DE1FFB3452F2C5C2789A2__padding[16];
 	};
 };
-#pragma pack(pop, tp)
 
 // Unity.Profiling.ProfilerUtility
 struct ProfilerUtility_t5676CF83C31844AFB62A5195951EB25001461312 

@@ -10,16 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: GoogleDriveAssets
+  m_Name: Localization-String-Tables-Russian (ru)
   m_EditorClassIdentifier: 
-  m_GroupName: GoogleDriveAssets
+  m_GroupName: Localization-String-Tables-Russian (ru)
   m_Data:
     m_SerializedData: []
-  m_GUID: 5958badaa60a8f94f998aa82a92a1483
-  m_SerializeEntries: []
-  m_ReadOnly: 0
+  m_GUID: 3802812765741df48813e9159881281c
+  m_SerializeEntries:
+  - m_GUID: 76e9c7b74099ccd4b95eb831effa96f0
+    m_Address: LeardTable_ru
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    - Preload
+  m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 052316073ec4b554db6085dcb8d75d90, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: aefac1f58b45d6c4293da0fe19ef45e7, type: 2}
-    - {fileID: 11400000, guid: 46fbacdb58ca9974c95c94c8abe0b722, type: 2}
+    - {fileID: 11400000, guid: 126fa0b2bbe3ec64eb89ae5732cbab03, type: 2}
+    - {fileID: 11400000, guid: 7a92d09704dc32f44b32ac0f33aad5e5, type: 2}
