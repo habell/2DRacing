@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: 235764e42e5d70c4a8aad0cbc0d42be2
   m_SerializeEntries:
   - m_GUID: c3e92fd6787b28f43a2127356c7de663
-    m_Address: New Table_en
+    m_Address: LeardTable_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
