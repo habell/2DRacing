@@ -1778,7 +1778,6 @@ struct PerformanceLevelChangeEventArgs_t2CDED2F277ED6C533AA0BA6F11B790ECBB4B2838
 };
 
 // Unity.Profiling.ProfilerCategory
-#pragma pack(push, tp, 1)
 struct ProfilerCategory_tA55212CD512C618AF6D2147791F20319896592AC 
 {
 	union
@@ -1803,10 +1802,8 @@ struct ProfilerCategory_tA55212CD512C618AF6D2147791F20319896592AC
 		uint8_t ProfilerCategory_tA55212CD512C618AF6D2147791F20319896592AC__padding[2];
 	};
 };
-#pragma pack(pop, tp)
 
 // Unity.Profiling.LowLevel.Unsafe.ProfilerMarkerData
-#pragma pack(push, tp, 1)
 struct ProfilerMarkerData_tC01B15D61B904B700E4DE1FFB3452F2C5C2789A2 
 {
 	union
@@ -1883,7 +1880,6 @@ struct ProfilerMarkerData_tC01B15D61B904B700E4DE1FFB3452F2C5C2789A2
 		uint8_t ProfilerMarkerData_tC01B15D61B904B700E4DE1FFB3452F2C5C2789A2__padding[16];
 	};
 };
-#pragma pack(pop, tp)
 
 // System.Reflection.PropertyInfo
 struct PropertyInfo_t  : public MemberInfo_t
