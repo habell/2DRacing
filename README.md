@@ -1,1 +1,1 @@
-# 2DRacing hws
+# Strategy hws
