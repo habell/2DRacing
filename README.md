@@ -1,1 +1,1 @@
-# Strategy hws
+# Strategy
