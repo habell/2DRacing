@@ -1,1 +1,3 @@
 # Strategy
+
+Happy new year..
